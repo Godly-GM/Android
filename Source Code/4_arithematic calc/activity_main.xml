@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="166dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+        <EditText
+            android:id="@+id/n"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Number 1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/n2"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Number 2"
+            android:inputType="number" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+
+        <EditText
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Result..."
+            android:inputType="number" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/clr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clr" />
+    </TableRow>
+
+</LinearLayout>
