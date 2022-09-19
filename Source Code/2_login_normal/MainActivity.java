@@ -15,9 +15,6 @@ public class MainActivity extends AppCompatActivity {
     Button b1,b2;
     TextView t;
 
-    String user="Admin";
-    String pass="123";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,13 +37,7 @@ public class MainActivity extends AppCompatActivity {
                         String pd = e2.getText().toString();
 
                         t.setText("Username is: " + unm + " and Password is: " + pd);
-
-                        if (unm.equals(user) && pass.equals(pd)) {
-                            Toast.makeText(getApplicationContext(), "Valid User", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Invalid user, Check....", Toast.LENGTH_LONG).show();
-                        }
-
+                    
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Empty, Fill the fields", Toast.LENGTH_SHORT).show();
