@@ -1,0 +1,21 @@
+        
+        String eml = e.getText().toString();
+				String emailPattern = "[a-zA-Z0-9._-]+@gmail+\\.+com+";
+				if (!eml.matches(emailPattern)) {
+					e.setText("");
+					e.setError("Invalid entry");
+				}
+
+				
+				String mo = ph.getText().toString();
+				if (mo.length() != 10) {
+					ph.setText("");
+					ph.setError("Invalid entry");
+				}
+        
+        
+				String pa = p.getText().toString();
+				if (pa.length() != 4) {
+					p.setText("");
+					p.setError("Invalid entry");
+				}
